@@ -139,6 +139,7 @@
         android:title="@string/tap_to_wake"
         android:summary="@string/tap_to_wake_summary" />
 
+
     <ListPreference
         android:key="theme"
         android:title="@string/device_theme"
