@@ -167,15 +167,6 @@
         android:key="theme_customization_category"
         android:title="@string/theme_customization_category"
         android:order="1200"> <!-- Incremented by 100 from last order (i.e. 1100) -->
-<<<<<<< HEAD
-=======
-
-    <SwitchPreference
-        android:key="dark_ui_mode"
-        android:title="@string/dark_ui_mode"
-        settings:keywords="@string/keywords_dark_ui_mode"
-        settings:controller="com.android.settings.display.DarkUIPreferenceController"/>
->>>>>>> 380a3aeb32... Settings: [2/2] Implement cutout force full screen
 
         <ListPreference
             android:key="android.theme.customization.accent_color"
