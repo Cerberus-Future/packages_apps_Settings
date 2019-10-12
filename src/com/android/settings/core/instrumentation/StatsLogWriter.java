@@ -27,7 +27,7 @@ public class StatsLogWriter implements LogWriter {
 
     @Override
     public void visible(Context context, int attribution, int pageId) {
-        StatsLog.write(StatsLog.SETTINGS_UI_CHANGED /* Atom name */,
+        StatsLog.write(StatsLog.SETTINGS_UI_CHANGED /* Cerberus name */,
                 attribution,
                 SettingsEnums.PAGE_VISIBLE /* action */,
                 pageId,
@@ -37,7 +37,7 @@ public class StatsLogWriter implements LogWriter {
 
     @Override
     public void hidden(Context context, int pageId) {
-        StatsLog.write(StatsLog.SETTINGS_UI_CHANGED /* Atom name */,
+        StatsLog.write(StatsLog.SETTINGS_UI_CHANGED /* Cerberus name */,
                 SettingsEnums.PAGE_UNKNOWN /* attribution */,
                 SettingsEnums.PAGE_HIDE /* action */,
                 pageId,
@@ -83,7 +83,7 @@ public class StatsLogWriter implements LogWriter {
 
     @Override
     public void action(int attribution, int action, int pageId, String key, int value) {
-        StatsLog.write(StatsLog.SETTINGS_UI_CHANGED /* atomName */,
+        StatsLog.write(StatsLog.SETTINGS_UI_CHANGED /* cerberusName */,
                 attribution,
                 action,
                 pageId,

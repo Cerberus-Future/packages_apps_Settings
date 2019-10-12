@@ -15,9 +15,9 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
-    <!-- Atom Settings -->
-    <string name="atom_settings_title">Atom Settings</string>
-    <string name="atom_dashboard_summary">STAY ATOMIC!</string>
+    <!-- Cerberus Settings -->
+    <string name="cerberus_settings_title">Cerberus Settings</string>
+    <string name="cerberus_dashboard_summary">STAY CERBERUS!</string>
 
     <!-- Fingerprint location message - default -->
     <string name="security_settings_fingerprint_enroll_find_sensor_message_front" product="default">Locate the fingerprint sensor on the front of your phone.</string>
@@ -45,7 +45,7 @@
     <string name="app_play_store">Google Play</string>
 
     <!-- Themes customisation -->
-    <string name="theme_customization_systemui_title">Atom overlays</string>
+    <string name="theme_customization_systemui_title">Cerberus overlays</string>
 
     <!-- Notch: Full screen apps -->
     <string name="display_cutout_force_fullscreen_title">Full screen apps</string>

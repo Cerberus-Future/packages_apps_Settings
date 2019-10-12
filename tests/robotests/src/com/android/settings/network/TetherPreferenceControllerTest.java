@@ -48,7 +48,7 @@ import org.robolectric.RobolectricTestRunner;
 import org.robolectric.RuntimeEnvironment;
 import org.robolectric.util.ReflectionHelpers;
 
-import java.util.concurrent.atomic.AtomicReference;
+import java.util.concurrent.cerby.CerbyReference;
 
 @RunWith(RobolectricTestRunner.class)
 public class TetherPreferenceControllerTest {
@@ -96,7 +96,7 @@ public class TetherPreferenceControllerTest {
     @Test
     public void goThroughLifecycle_shouldDestoryBluetoothProfile() {
         final BluetoothPan pan = mock(BluetoothPan.class);
-        final AtomicReference<BluetoothPan> panRef =
+        final CerbyReference<BluetoothPan> panRef =
                 ReflectionHelpers.getField(mController, "mBluetoothPan");
         panRef.set(pan);
 

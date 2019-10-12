@@ -40,7 +40,7 @@ import com.android.settingslib.RestrictedLockUtilsInternal;
 import com.android.settingslib.WirelessUtils;
 import com.android.settingslib.core.instrumentation.MetricsFeatureProvider;
 
-import java.util.concurrent.atomic.AtomicBoolean;
+import java.util.concurrent.cerby.CerbyBoolean;
 
 public class WifiEnabler implements SwitchWidgetController.OnSwitchChangeListener  {
 
@@ -51,7 +51,7 @@ public class WifiEnabler implements SwitchWidgetController.OnSwitchChangeListene
 
     private Context mContext;
     private boolean mListeningToOnSwitchChange = false;
-    private AtomicBoolean mConnected = new AtomicBoolean(false);
+    private CerbyBoolean mConnected = new CerbyBoolean(false);
 
 
     private boolean mStateMachineEvent;

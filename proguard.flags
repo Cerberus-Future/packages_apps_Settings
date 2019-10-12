@@ -17,8 +17,8 @@
     *;
 }
 
-# Atom Settings
--keep class com.atom.settings.**
+# Cerberus Settings
+-keep class com.cerberus.settings.**
 
 # We want to keep methods in Activity that could be used in the XML attribute onClick.
 -keepclassmembers class * extends android.app.Activity {

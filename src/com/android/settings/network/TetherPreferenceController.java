@@ -50,7 +50,7 @@ import com.android.settingslib.core.lifecycle.events.OnDestroy;
 import com.android.settingslib.core.lifecycle.events.OnPause;
 import com.android.settingslib.core.lifecycle.events.OnResume;
 
-import java.util.concurrent.atomic.AtomicReference;
+import java.util.concurrent.cerby.CerbyReference;
 
 public class TetherPreferenceController extends AbstractPreferenceController implements
         PreferenceControllerMixin, LifecycleObserver, OnCreate, OnResume, OnPause, OnDestroy {
@@ -58,7 +58,7 @@ public class TetherPreferenceController extends AbstractPreferenceController imp
     private static final String KEY_TETHER_SETTINGS = "tether_settings";
 
     private final boolean mAdminDisallowedTetherConfig;
-    private final AtomicReference<BluetoothPan> mBluetoothPan;
+    private final CerbyReference<BluetoothPan> mBluetoothPan;
     private final ConnectivityManager mConnectivityManager;
     private final BluetoothAdapter mBluetoothAdapter;
     @VisibleForTesting
@@ -82,14 +82,14 @@ public class TetherPreferenceController extends AbstractPreferenceController imp
     TetherPreferenceController() {
         super(null);
         mAdminDisallowedTetherConfig = false;
-        mBluetoothPan = new AtomicReference<>();
+        mBluetoothPan = new CerbyReference<>();
         mConnectivityManager = null;
         mBluetoothAdapter = BluetoothAdapter.getDefaultAdapter();
     }
 
     public TetherPreferenceController(Context context, Lifecycle lifecycle) {
         super(context);
-        mBluetoothPan = new AtomicReference<>();
+        mBluetoothPan = new CerbyReference<>();
         mAdminDisallowedTetherConfig = isTetherConfigDisallowed(context);
         mConnectivityManager =
                 (ConnectivityManager) context.getSystemService(Context.CONNECTIVITY_SERVICE);

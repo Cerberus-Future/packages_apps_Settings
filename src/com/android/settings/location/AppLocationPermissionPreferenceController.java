@@ -20,7 +20,7 @@ import com.android.settingslib.core.lifecycle.Lifecycle;
 
 import java.util.Arrays;
 import java.util.List;
-import java.util.concurrent.atomic.AtomicInteger;
+import java.util.concurrent.cerby.CerbyInteger;
 
 public class AppLocationPermissionPreferenceController extends
         LocationBasePreferenceController implements PreferenceControllerMixin {
@@ -33,7 +33,7 @@ public class AppLocationPermissionPreferenceController extends
     @VisibleForTesting
     int mNumHasLocation = -1;
 
-    final AtomicInteger loadingInProgress = new AtomicInteger(0);
+    final CerbyInteger loadingInProgress = new CerbyInteger(0);
     private int mNumTotalLoading = 0;
     private int mNumHasLocationLoading = 0;
 

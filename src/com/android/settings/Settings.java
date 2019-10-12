@@ -177,6 +177,6 @@ public class Settings extends SettingsActivity {
     public static class AccountDashboardActivity extends SettingsActivity {}
     public static class SystemDashboardActivity extends SettingsActivity {}
 	
-    public static class AtomSettingsActivity extends SettingsActivity { /* empty */ }
+    public static class CerberusSettingsActivity extends SettingsActivity { /* empty */ }
 
 }
