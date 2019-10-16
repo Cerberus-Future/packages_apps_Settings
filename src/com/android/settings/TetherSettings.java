@@ -52,7 +52,7 @@ import java.lang.ref.WeakReference;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
-import java.util.concurrent.cerby.CerbyReference;
+import java.util.concurrent.atomic.AtomicReference;
 
 /*
  * Displays preferences for Tethering.
@@ -81,7 +81,7 @@ public class TetherSettings extends RestrictedSettingsFragment
 
     private String[] mUsbRegexs;
     private String[] mBluetoothRegexs;
-    private CerbyReference<BluetoothPan> mBluetoothPan = new CerbyReference<>();
+    private AtomicReference<BluetoothPan> mBluetoothPan = new AtomicReference<>();
 
     private Handler mHandler = new Handler();
     private OnStartTetheringCallback mStartTetheringCallback;
