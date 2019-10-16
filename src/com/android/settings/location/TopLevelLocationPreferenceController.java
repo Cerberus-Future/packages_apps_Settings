@@ -24,7 +24,7 @@ import com.android.settingslib.core.lifecycle.events.OnStop;
 
 import java.util.Arrays;
 import java.util.List;
-import java.util.concurrent.cerby.CerbyInteger;
+import java.util.concurrenta.atomic.AtomicInteger;
 
 public class TopLevelLocationPreferenceController extends BasePreferenceController implements
         LifecycleObserver, OnStart, OnStop {
@@ -36,7 +36,7 @@ public class TopLevelLocationPreferenceController extends BasePreferenceControll
     private int mNumTotalLoading = 0;
     private BroadcastReceiver mReceiver;
     private Preference mPreference;
-    private CerbyInteger loadingInProgress = new CerbyInteger(0);
+    private AtomicInteger loadingInProgress = new AtomicInteger(0);
 
     public TopLevelLocationPreferenceController(Context context, String preferenceKey) {
         super(context, preferenceKey);
