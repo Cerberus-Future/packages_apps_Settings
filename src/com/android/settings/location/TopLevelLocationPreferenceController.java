@@ -24,7 +24,7 @@ import com.android.settingslib.core.lifecycle.events.OnStop;
 
 import java.util.Arrays;
 import java.util.List;
-import java.util.concurrenta.atomic.AtomicInteger;
+import java.util.concurrent.atomic.AtomicInteger;
 
 public class TopLevelLocationPreferenceController extends BasePreferenceController implements
         LifecycleObserver, OnStart, OnStop {
